@@ -1,0 +1,162 @@
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (max-width: 1170px) {
+    /*homepage hero start*/
+    .container1{
+        padding: 0 50px;
+    }
+
+    .container2{
+        padding: 0 50px;
+    }
+
+
+
+    /*homepage hero stop*/
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+    /*homepage hero start*/
+    
+
+    .mobile-menu{
+        display: block;
+    }
+    
+    .menu{
+        display: none;
+        background: var(--background-primary);
+        position: absolute;
+        width: 100%;
+        padding: 15px 0;
+        top: 98px;
+        right: 0px;
+        text-align: center;
+        z-index: 10;
+    }
+
+    .menu ul li{
+        display: block;
+    }
+
+    .header-banner h1{
+        width: 90%;
+    }
+    
+    .header-banner p{
+        width: 90%;
+    }
+    /*homepage hero stop*/
+}
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 800px) {
+    /*services grid start*/
+    .services-wrap{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 60px 0;
+    }
+
+    .service-item{
+        flex-basis: 45%;
+        padding: 40px 30px;
+    }
+    /*services grid stop*/
+}
+
+@media only screen and (max-width: 768px) {
+    /*homepage hero start*/
+
+    .header-banner{
+        padding: 100px 0;
+    }
+
+    .header-banner h1{
+        font-size: 55px;
+    }
+    
+    .header-banner p{
+        font-size: 20px;
+    }
+
+    .header-banner a{
+        margin-top: 50px;
+    }
+    /*homepage hero stop*/
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+
+    /*homepage hero start*/
+
+    .header-banner{
+        padding: 80px 0;
+    }
+    .header-banner h1{
+        font-size: 45px;
+        width: 100%;
+    }
+    
+    .header-banner p{
+        font-size: 18px;
+        padding: 10px 0 0 0;
+        width: 100%;
+    }
+
+    .header-banner a{
+        margin-top: 30px;
+    }
+    /*homepage hero stop*/
+    /*services grid start*/
+
+    .services-wrap{
+        flex-direction: column;
+    }
+
+    .service-item{
+        flex-basis: 45%;
+        padding: 50px 50px;
+    }
+    /*services grid stop*/
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 400px) {
+    .header-banner h1{
+        font-size: 35px;
+        width: 100%;
+    }
+    
+    .header-banner p{
+        font-size: 16px;
+        padding: 10px 0 0 0;
+        width: 100%;
+    }
+
+    /*services grid start*/
+
+    .services-wrap{
+        flex-direction: column;
+    }
+
+    .service-item{
+        flex-basis: 45%;
+        padding: 40px 30px;
+    }
+    /*services grid stop*/
+}
+
+
+
+
+
