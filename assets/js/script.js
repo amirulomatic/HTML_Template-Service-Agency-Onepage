@@ -28,5 +28,15 @@ $(document).ready(function(){
     })
 
 
+    //gallery 
+    $('.myGallery').magnificPopup({ //select gallery parent name
+        type: 'image',
+        delegate: '.portfolio-item a', // the selector for gallery item
+        gallery:{
+          enabled:true
+        }
+      });
+
+
 });
 })(jQuery);

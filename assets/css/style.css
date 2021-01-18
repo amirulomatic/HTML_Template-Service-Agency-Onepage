@@ -212,3 +212,74 @@ section.hero::before{
     line-height: 1.4;
 }
 /*services grid stop*/
+
+
+/* portfolio section start */
+section.portfolio{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.portfolio-item{
+    flex-basis: 25%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+    
+}
+.portfolio-item a img{
+    width: 100%;
+    height: 100%;
+    transition: all .4s ease-in;
+    
+}
+
+.portfolio-item:hover a img{
+    transform: scale(1.2);
+}
+
+.portfolio-item .overlay{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .4s ease-in;
+}
+
+.portfolio-item:hover .overlay{
+    background: #e84545d5;
+}
+
+.portfolio-item .overlay h3{
+    transform: translate(0px, -20px);
+    opacity: 0;
+    padding-bottom: 10px;
+    transition: all .4s ease-in;
+    color: var(--color-white);
+    font-family: var(--heading-font2);
+    font-size: var(--body-font-size1);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.portfolio-item .overlay p{
+    transform: translate(0px, 20px);
+    opacity: 0;
+    transition: all .4s ease-in;
+    color: var(--color-white);
+    font-size: var(--body-font-size1);
+    font-family: var(--body-font);
+}
+
+.portfolio-item .overlay:hover h3, .portfolio-item .overlay:hover p{
+    opacity: 1;
+    transform: unset;
+}
+/* portfolio section stop */
