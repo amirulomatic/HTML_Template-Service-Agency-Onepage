@@ -1,6 +1,5 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (max-width: 1170px) {
-    /*homepage hero start*/
     .container1{
         padding: 0 50px;
     }
@@ -9,16 +8,11 @@
         padding: 0 50px;
     }
 
-
-
-    /*homepage hero stop*/
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
-    /*homepage hero start*/
-    
 
     .mobile-menu{
         display: block;
@@ -47,14 +41,14 @@
     .header-banner p{
         width: 90%;
     }
-    /*homepage hero stop*/
+
 }
 
 
 /* Medium devices (landscape tablets, 768px and up) */
 
 @media only screen and (max-width: 800px) {
-    /*services grid start*/
+
     .services-wrap{
         flex-direction: row;
         flex-wrap: wrap;
@@ -66,11 +60,15 @@
         flex-basis: 45%;
         padding: 40px 30px;
     }
-    /*services grid stop*/
+
+    .portfolio-item{
+        height: 200px;
+    }
+      
 }
 
 @media only screen and (max-width: 768px) {
-    /*homepage hero start*/
+
 
     .header-banner{
         padding: 100px 0;
@@ -87,7 +85,16 @@
     .header-banner a{
         margin-top: 50px;
     }
-    /*homepage hero stop*/
+
+
+    .portfolio-item{
+        flex-basis: 50%;
+        height: 250px;
+    }
+
+    .team-member{
+        flex-basis: 46%;
+    }
 }
 
 
@@ -95,7 +102,7 @@
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width: 600px) {
 
-    /*homepage hero start*/
+
 
     .header-banner{
         padding: 80px 0;
@@ -114,8 +121,7 @@
     .header-banner a{
         margin-top: 30px;
     }
-    /*homepage hero stop*/
-    /*services grid start*/
+
 
     .services-wrap{
         flex-direction: column;
@@ -125,7 +131,19 @@
         flex-basis: 45%;
         padding: 50px 50px;
     }
-    /*services grid stop*/
+
+
+    .portfolio-item{
+        flex-basis: 100%;
+    }
+
+    .portfolio-item a img{
+        height: auto; 
+    }
+
+    .team-member{
+        flex-basis: 100%;
+    }
 }
 
 
@@ -143,7 +161,6 @@
         width: 100%;
     }
 
-    /*services grid start*/
 
     .services-wrap{
         flex-direction: column;
@@ -153,7 +170,7 @@
         flex-basis: 45%;
         padding: 40px 30px;
     }
-    /*services grid stop*/
+
 }
 
 

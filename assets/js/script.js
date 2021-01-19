@@ -25,17 +25,10 @@ $(document).ready(function(){
         }else{
             $('nav.menu').hide();
         }
-    })
+    });
 
-
-    //gallery 
-    $('.myGallery').magnificPopup({ //select gallery parent name
-        type: 'image',
-        delegate: '.portfolio-item a', // the selector for gallery item
-        gallery:{
-          enabled:true
-        }
-      });
+    
+    
 
 
 });
