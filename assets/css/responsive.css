@@ -8,11 +8,16 @@
         padding: 0 50px;
     }
 
+    .owl-dots{
+        display: none;
+    }
+
 }
 
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+
 
     .mobile-menu{
         display: block;
@@ -41,6 +46,25 @@
     .header-banner p{
         width: 90%;
     }
+
+    .testimonial-item{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .testimonial-item img{
+        display: block;
+        height: auto !important;
+        width: 100% !important;
+    }
+
+    .testimonial-content{
+        height: auto;
+    }
+        
+    
 
 }
 
@@ -95,6 +119,10 @@
     .team-member{
         flex-basis: 46%;
     }
+
+    .footer-widget{
+        flex-basis: 45%;
+    }
 }
 
 
@@ -138,11 +166,20 @@
     }
 
     .portfolio-item a img{
-        height: auto; 
+        height: auto;
     }
 
     .team-member{
         flex-basis: 100%;
+    }
+
+    .testimonial-content{
+        padding: 50px;
+    }
+
+    .footer-widget{
+        flex-basis: 100%;
+        padding: 15px 0;
     }
 }
 

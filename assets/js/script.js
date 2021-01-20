@@ -27,6 +27,18 @@ $(document).ready(function(){
         }
     });
 
+    //testimonial carusel
+
+        $(".owl-carousel").owlCarousel({ //this class needs to put in mother div
+            items: 1, //per page
+            loop: true,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 6000
+        });
+
+
     
     
 
